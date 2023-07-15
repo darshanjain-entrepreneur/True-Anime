@@ -1,3 +1,1 @@
-export const registerController = async (req, res) => {
-  res.send("hello");
-};
+export const registerController = async (req, res) => {};
