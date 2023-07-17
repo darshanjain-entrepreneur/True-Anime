@@ -2,4 +2,41 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+ 
+  
+}
+
+.navbar{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+font-size: 17px;
+line-height: 26px;
+text-transform: uppercase;
+font-weight: bold;
+background-color:rgb(241, 242, 242) ;
+box-shadow:0px 8px 6px -6px gray; 
+
+
+}
+
+.active{
+  border-bottom: 3px solid black;
+ 
+}
+
+.footer{
+color: white;
+padding: 18px;
+background-color:rgb(46, 44, 44);
+
+}
+.footer a{
+  text-decoration: none;
+  color:aliceblue;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 10px;
+}
+.footer a:hover{
+  color:cornflowerblue;
+  border-bottom: 2px solid white;
 }
