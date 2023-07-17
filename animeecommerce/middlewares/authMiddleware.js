@@ -1,7 +1,7 @@
 import JWT from "jsonwebtoken";
 import userModels from "../models/userModels.js";
 
-export const reqireSignIn = async (req, res, next) => {
+export const requireSignIn = async (req, res, next) => {
   try {
     const decode = JWT.verify(
       req.headers.authorization,
