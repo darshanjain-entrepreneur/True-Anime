@@ -5,12 +5,16 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Policy from "./pages/Policy";
 import PageNotFound from "./pages/PageNotFound";
+import Header from "./components/Layout/Header";
+import Footer from "./components/Layout/Footer";
 
 
 function App() {
   return (
  <>
+  <Header />
   <Routes>
+ 
 <Route path='/' element={<HomePage/>}  />
 <Route path='/about' element={<About/>}  />
 <Route path='/contact' element={<Contact/>}  />
@@ -19,7 +23,7 @@ function App() {
 
 
 </Routes>
- 
+<Footer />
  
  </>
    
