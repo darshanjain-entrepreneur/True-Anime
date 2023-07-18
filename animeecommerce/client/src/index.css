@@ -71,3 +71,30 @@ background-color:rgb(46, 44, 44);
   background-color: black;
   color: white;
 }
+
+
+/* register page */
+.register{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  height: 70vh;
+  flex-direction: column;
+  background-color:rgb(251, 247, 247);
+}
+.register h1{
+  margin-bottom: 30px;
+}
+.register form{
+  display:flex;
+  flex-direction: column;
+}
+.register form div{
+  display: flex;
+  flex-direction: row;
+  
+}
+.register form div label{
+margin-right: 15px;
+  
+}

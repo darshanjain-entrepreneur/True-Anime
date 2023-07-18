@@ -7,6 +7,7 @@ import Policy from "./pages/Policy";
 import PageNotFound from "./pages/PageNotFound";
 import Header from "./components/Layout/Header";
 import Footer from "./components/Layout/Footer";
+import Register from "./pages/Auth/Register";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
   <Routes>
  
 <Route path='/' element={<HomePage/>}  />
+<Route path='/register' element={<Register/>} />
 <Route path='/about' element={<About/>}  />
 <Route path='/contact' element={<Contact/>}  />
 <Route path="/policy" element={<Policy/>} />
