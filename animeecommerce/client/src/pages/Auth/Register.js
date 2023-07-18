@@ -21,7 +21,7 @@ const handleSubmit = async  (e) => {
         name , email ,password , phone , address
     })
 
-    if(res.data.success){
+    if(res && res.data.success){
       setTimeout(() => {
         toast.success(res.data.message);
 
@@ -30,10 +30,11 @@ const handleSubmit = async  (e) => {
       
     }else{
         toast.error(res.data.message);
+        
     }
     
    } catch (error) {
-    
+    toast.error(error.message);
    }
 
 }
@@ -42,8 +43,9 @@ const handleSubmit = async  (e) => {
   return (
   <Layout title={"Register - True Anime"}>
    <div className="register">
-    <h1>Register</h1>
+   
    <form onSubmit={handleSubmit}>
+   <h3>Register</h3>
   <div className="mb-3">
     <label htmlFor="exampleInputName" className="form-label">Name</label>
     <input type="text" className="form-control" id="exampleInputEmail1"value={name} 
@@ -70,7 +72,7 @@ const handleSubmit = async  (e) => {
     onChange={(e) => setAddress(e.target.value)} required/>
     </div>
   
-  <button type="submit" className="btn btn-primary">Submit</button>
+  <button type="submit" className="btn btn-primary">REGISTER</button>
 </form>
 
 
